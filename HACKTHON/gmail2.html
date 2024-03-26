@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>login page</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    
+    
+   <style>
+    *{
+        margin:0;
+        padding: 0%;
+        box-sizing: border-box;
+
+    }
+    body{
+        height: 100vb;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color:rgb(148, 141, 141);
+    
+    }
+    .container{
+        display:flex ;
+        flex-direction: column;
+        width: 300px;
+        padding:1px solid skyblue;
+        border-radius: 5px;
+
+    }
+    input{
+        margin: 5px 0px ;
+        height: 35px;
+        padding: 7px;
+    }
+    button{
+        height: 35px;
+        margin: 5px 0 px;
+        background-color: skyblue;
+        border:none;
+        border-radius: 5px;
+       color:#333  ;
+
+    }
+    button:hover{
+        background-color: #333;
+        color: skyblue;
+    }
+</style>
+   </head>
+<body>
+
+    <py-script src="mailotp.py">
+
+    </py-script>
+    <div class="container">
+        <a href=""><input type="email"
+        placeholder="email">
+        <input type="number"
+        placeholder="OTP">
+        <a href="picturepass.html"><button>Login</button></a>
+
+    </div>
+    <body>
+    <py-script>
+        print("hello world")
+    </py-script>
+    
+</body>
+</html>

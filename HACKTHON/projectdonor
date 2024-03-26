@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <style>
+        body {
+           background-color: rgb(145, 153, 136);
+           background-image: url();
+           background-size: cover;
+        }
+        
+       header {
+            text-align: center;
+            margin-bottom: 30px;
+            background-color:red ;
+        }
+        
+        h1 {
+            font-size: 24px;
+        }
+        
+        section {
+            border: 1px solid #ccc;
+            
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        form {
+            display: 2px;;
+            flex-direction: column;
+        }
+        
+        label {
+            display: block;
+            margin-bottom:
+        }
+        
+        form{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        label{
+          font-family:Arial, Helvetica, sans-serif;
+        }
+        button{
+            position: relative;
+            width: 200px;
+            padding: 15px;
+            text-align: center;
+            margin: 20px 10px;   ;
+            font-weight: bold;
+            border: 2px solid rgb(128, 120, 233);
+            background: transparent;
+            color: #fff;
+            cursor: pointer;
+            overflow: hidden;
+            text-transform: uppercase;
+
+        }
+        span{
+            background: rgb(80, 212, 75);
+            height: 100%;
+            width: 0;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: 0.5s;
+        }
+        button:hover span{
+            width: 100%;
+        }
+
+    </style> 
+    <script>
+        alert("sucessfully donated")</script>
+</head>
+<body>
+    <header>
+        <h1>Waste Food Management Donation and Receiver System</h1>
+    </header>
+
+    <main>
+      <center><div> <section id="donor-section">
+            <h2>Donor Section</h2>
+            <form id="donor-form" required="">
+                <label for="donor-name" size=>Name:</label>
+                <input type="text" id="donor-name" name="donor-name" size="18" required>
+                <br>
+
+                <label for="donor-address">Address:</label>
+                <input type="text" id="donor-address" name="donor-address" required>
+                <br>
+
+                <label for="donor-contact">Contact Number:</label>
+                <input type="tel" id="donor-contact" name="donor-contact" required>
+                <br>
+
+                <label for="donor-quantity">Quantity of Food:</label>
+                <input type="number" id="donor-quantity" name="donor-quantity" required>
+                <br>
+
+                <label for="donor-type">Type of Food:</label>
+                <select id="donor-type" name="donor-type" required>
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="non-vegetarian">Non-Vegetarian</option>
+                    <option value="other">Other</option>
+                </select>
+                <br>
+
+                <label for="donor-pickup-time">Pickup Time:</label>
+                <input type="datetime-local" id="donor-pickup-time" name="donor-pickup-time" required>
+                <br>
+
+                <button type="button"><span></span>Donate</button>
+            </form>
+        </section></div> 
+</body>
+</html>
